@@ -36,7 +36,6 @@ export function Reviews() {
                 <div key={s}><span>{s}</span><span className="bar"><i style={{ width: `${p}%` }} /></span><span>{p}%</span></div>
               ))}
             </div>
-            <div className="sources"><span>Google 4.8</span><span>Zomato 4.6</span><span>TripAdvisor 5.0</span></div>
           </div>
           <div>
             <div className="review-track" ref={track} tabIndex={0} aria-label="Guest reviews" onScroll={() => setActive(Math.min(reviews.length - 1, Math.round((track.current?.scrollLeft ?? 0) / step())))}>
