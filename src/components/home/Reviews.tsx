@@ -25,18 +25,6 @@ export function Reviews() {
           <div><span className="eyebrow">Guest notes</span><h2 className="h-lg" id="reviews-title">Kind words from <span className="italic">our regulars</span></h2></div>
         </div>
         <div className="reviews-wrap">
-          <div className="rating-summary reveal" suppressHydrationWarning>
-            <div>
-              <div className="rating-big">4.8</div>
-              <div className="rating-stars" role="img" aria-label="4.8 out of 5 stars">★★★★★</div>
-              <p style={{ margin: "6px 0 0", color: "var(--text-dark-dim)", fontSize: 14 }}>from 3,600+ reviews</p>
-            </div>
-            <div className="rating-bars" aria-hidden="true">
-              {[["5★", 84], ["4★", 11], ["3★", 3], ["2★", 1], ["1★", 1]].map(([s, p]) => (
-                <div key={s}><span>{s}</span><span className="bar"><i style={{ width: `${p}%` }} /></span><span>{p}%</span></div>
-              ))}
-            </div>
-          </div>
           <div>
             <div className="review-track" ref={track} tabIndex={0} aria-label="Guest reviews" onScroll={() => setActive(Math.min(reviews.length - 1, Math.round((track.current?.scrollLeft ?? 0) / step())))}>
               {reviews.map((r) => (
@@ -45,7 +33,7 @@ export function Reviews() {
                   <p>“{r.text}”</p>
                   <footer>
                     <span className="avatar" aria-hidden="true">{r.name.charAt(0)}</span>
-                    <span><strong>{r.name}</strong><small>{r.src} · {r.when}</small></span>
+                    <span><strong>{r.name}</strong><small>Sample review · {r.when}</small></span>
                   </footer>
                 </article>
               ))}

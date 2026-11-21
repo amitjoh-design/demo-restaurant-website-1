@@ -452,14 +452,8 @@ blockquote.chef-quote::before { content: "“"; display: block; font-size: 90px;
 @keyframes fade { from { opacity: 0; } }
 
 /* ---------- Reviews ---------- */
-.reviews-wrap { display: grid; grid-template-columns: 360px minmax(0, 1fr); gap: 60px; align-items: start; }
-.rating-summary { padding: 30px; border-radius: var(--radius); background: #fff; box-shadow: var(--shadow-soft); }
-.rating-big { font-family: var(--serif); font-size: 76px; line-height: 1; color: var(--text-dark); }
+.reviews-wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: 60px; align-items: start; }
 .rating-stars { color: var(--saffron); font-size: 22px; letter-spacing: 3px; }
-.rating-bars { display: grid; gap: 8px; margin: 22px 0; font-size: 13px; color: var(--text-dark-dim); }
-.rating-bars div { display: grid; grid-template-columns: 26px 1fr 34px; gap: 10px; align-items: center; }
-.rating-bars .bar { height: 6px; border-radius: 6px; background: var(--cream-2); overflow: hidden; }
-.rating-bars .bar i { display: block; height: 100%; background: var(--saffron); border-radius: inherit; }
 .sources { display: flex; gap: 8px; flex-wrap: wrap; }
 .sources span { font-size: 12px; font-weight: 700; padding: 6px 10px; border-radius: 999px; background: var(--cream); color: var(--text-dark-dim); }
 .review-track { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 22px) / 2); gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; scroll-behavior: smooth; }
@@ -824,9 +818,6 @@ blockquote.chef-quote::before { content: "“"; display: block; font-size: 90px;
   .carousel { grid-auto-columns: calc((100% - 2 * 22px) / 3); }
   .menu-preview-grid { grid-template-columns: 1fr; }
   .menu-feature { display: none; }
-  .reviews-wrap { grid-template-columns: minmax(0, 1fr); }
-  .rating-summary { display: grid; grid-template-columns: auto 1fr; gap: 10px 30px; align-items: center; }
-  .rating-summary .rating-bars { grid-row: span 2; margin: 0; }
   .footer-top { grid-template-columns: 1fr 1fr; }
   .dish-grid { grid-template-columns: repeat(2, 1fr); }
   .offers-grid { grid-template-columns: 1fr 1fr; }

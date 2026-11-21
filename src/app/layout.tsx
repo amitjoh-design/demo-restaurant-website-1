@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: "Charcoal tandoor, dum biryanis and slow-cooked regional curries in Demo Nagar, Bengaluru. Book a table, order delivery or plan a private dinner.",
   applicationName: "Ember & Saffron",
   alternates: { canonical: "/" },
+  robots: { index: false, follow: false },
   openGraph: {
     type: "website",
     siteName: "Ember & Saffron",

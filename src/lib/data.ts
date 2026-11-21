@@ -123,11 +123,11 @@ export const fees = { deliveryFee: 49, freeDeliveryAbove: 799, packaging: 25, gs
 export const servicePincodes = ["560008", "560017", "560038", "560071", "560075", "560093", "560102", "560001", "560025"];
 
 export const reviews = [
-  { name: "Ananya R.", src: "Google", stars: 5, when: "2 weeks ago", text: "The Old Delhi butter chicken is unreal, and the dal cooked overnight on the tandoor is the best I've had outside Delhi. Staff remembered my daughter's birthday without being asked." },
-  { name: "Rohit & Meera", src: "Zomato", stars: 5, when: "1 month ago", text: "Booked the terrace for our anniversary. Perfect lighting, perfect kebabs, and the kokum cooler is dangerously good." },
-  { name: "James W.", src: "TripAdvisor", stars: 5, when: "3 weeks ago", text: "As a visitor to Bengaluru this was the highlight. The Royal Thali is a tour of India on one plate. Book ahead on weekends!" },
-  { name: "Priya S.", src: "Google", stars: 4, when: "5 days ago", text: "Lovely Sunday sadya, great value. It gets busy around 1:30 so go early. Will be back for the Chef's Table." },
-  { name: "Karthik N.", src: "Google", stars: 5, when: "2 months ago", text: "Ordered delivery on a rainy night — arrived hot, beautifully packed, and the biryani still had its dum aroma. Ten out of ten." },
+  { name: "Ananya R.", stars: 5, when: "2 weeks ago", text: "The Old Delhi butter chicken is unreal, and the dal cooked overnight on the tandoor is the best I've had outside Delhi. Staff remembered my daughter's birthday without being asked." },
+  { name: "Rohit & Meera", stars: 5, when: "1 month ago", text: "Booked the terrace for our anniversary. Perfect lighting, perfect kebabs, and the kokum cooler is dangerously good." },
+  { name: "James W.", stars: 5, when: "3 weeks ago", text: "As a visitor to Bengaluru this was the highlight. The Royal Thali is a tour of India on one plate. Book ahead on weekends!" },
+  { name: "Priya S.", stars: 4, when: "5 days ago", text: "Lovely Sunday sadya, great value. It gets busy around 1:30 so go early. Will be back for the Chef's Table." },
+  { name: "Karthik N.", stars: 5, when: "2 months ago", text: "Ordered delivery on a rainy night — arrived hot, beautifully packed, and the biryani still had its dum aroma. Ten out of ten." },
 ];
 
 export const seatingOptions = ["Dining hall", "Terrace", "Bar counter"] as const;

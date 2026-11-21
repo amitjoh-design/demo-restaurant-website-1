@@ -42,7 +42,6 @@ export function Hero() {
       <div className="container hero-grid">
         <div>
           <div className="hero-badges">
-            <span className="badge"><span className="stars">★★★★★</span> 4.8 · 2,140 Google reviews</span>
             <span className="badge"><OpenStatus /></span>
           </div>
           <span className="eyebrow">Modern Indian · Charcoal &amp; Tandoor · Demo Nagar</span>
